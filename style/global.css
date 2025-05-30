@@ -1,0 +1,220 @@
+:root {
+  --text-1: #333448;
+  --text-2: #34353f;
+  --opposite-text-1: #ffffff;
+
+  --background: #eceef4;
+
+  --neutral-100: #ffffff;
+  --neutral-150: #f0f1f8;
+  --neutral-200: #d0d3e2;
+  --neutral-250: #c9cbde;
+  --neutral-300: #c1c1d9;
+  --neutral-350: #9fa2be;
+  --neutral-400: #7f82a3;
+
+  --default-color-100: var(--neutral-100);
+  --default-color-150: var(--neutral-150);
+  --default-color-200: var(--neutral-200);
+
+  --solution-1-100: hsl(145, 0%, 100%);
+  --solution-1-150: hsl(145, 60%, 92%);
+  --solution-1-200: hsl(145, 65%, 85%);
+  --solution-1-250: hsl(145, 67%, 65%);
+  --solution-1-300: hsl(145, 69%, 58%);
+  --solution-1-350: hsl(145, 71%, 44%);
+  --solution-1-400: hsl(145, 74%, 40%);
+
+  --solution-2-100: hsl(220, 0%, 100%);
+  --solution-2-150: hsl(220, 60%, 90%);
+  --solution-2-200: hsl(220, 65%, 85%);
+  --solution-2-250: hsl(220, 75%, 69%);
+  --solution-2-300: hsl(220, 69%, 58%);
+  --solution-2-350: hsl(220, 70%, 46%);
+  --solution-2-400: hsl(220, 74%, 40%);
+
+  --solution-3-100: hsl(280, 0%, 100%);
+  --solution-3-150: hsl(280, 60%, 90%);
+  --solution-3-200: hsl(280, 65%, 85%);
+  --solution-3-250: hsl(280, 66%, 70%);
+  --solution-3-300: hsl(280, 69%, 58%);
+  --solution-3-350: hsl(280, 73%, 50%);
+  --solution-3-400: hsl(280, 74%, 40%);
+
+  --solution-4-100: hsl(353, 0%, 100%);
+  --solution-4-150: hsl(353, 60%, 90%);
+  --solution-4-200: hsl(353, 65%, 85%);
+  --solution-4-250: hsl(353, 68%, 70%);
+  --solution-4-300: hsl(353, 69%, 58%);
+  --solution-4-350: hsl(353, 69%, 48%);
+  --solution-4-400: hsl(353, 74%, 40%);
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--solution-2);
+}
+
+html {
+  color: var(--text-1);
+  font-family: Inter, Helvetica, Arial, Verdana, sans-serif;
+}
+
+input {
+  all: unset;
+}
+
+ul {
+  all: unset;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  all: unset;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+
+.preload * {
+  transition: none !important;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  display: block;
+  height: 8rem;
+}
+
+.content {
+  padding: 0.5rem;
+  max-width: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.no-animate * {
+  transition: none !important;
+}
+
+.primary {
+  --default-color: var(--primary);
+  --alternate-default-color: var(--alternate-primary);
+}
+
+.neutral {
+  --default-color-100: var(--neutral-100);
+  --default-color-150: var(--neutral-150);
+  --default-color-200: var(--neutral-200);
+}
+
+.neutral-2 {
+  --default-color-100: var(--neutral-200);
+  --default-color-150: var(--neutral-250);
+  --default-color-200: var(--neutral-300);
+}
+
+.neutral-3 {
+  --default-color-100: var(--neutral-300);
+  --default-color-150: var(--neutral-350);
+  --default-color-200: var(--neutral-400);
+}
+
+.danger {
+  --default-color: var(--danger);
+  --alternate-default-color: var(--alternate-danger);
+}
+
+.alternate-primary {
+  --default-color: var(--alternate-primary);
+  --alternate-default-color: var(--primary);
+}
+
+.alternate-danger {
+  --default-color: var(--alternate-danger);
+  --alternate-default-color: var(--danger);
+}
+
+.solution-1 {
+  --default-color-100: var(--solution-1-100);
+  --default-color-150: var(--solution-1-150);
+  --default-color-200: var(--solution-1-200);
+  --default-color-250: var(--solution-1-250);
+  --default-color-300: var(--solution-1-350);
+  --default-color-350: var(--solution-1-400);
+  --default-color-400: var(--solution-1-400);
+}
+
+.solution-2 {
+  --default-color-100: var(--solution-2-100);
+  --default-color-150: var(--solution-2-150);
+  --default-color-200: var(--solution-2-200);
+  --default-color-250: var(--solution-2-250);
+  --default-color-300: var(--solution-2-300);
+  --default-color-350: var(--solution-2-350);
+  --default-color-400: var(--solution-2-400);
+}
+
+.solution-3 {
+  --default-color-100: var(--solution-3-100);
+  --default-color-150: var(--solution-3-150);
+  --default-color-200: var(--solution-3-200);
+  --default-color-250: var(--solution-3-250);
+  --default-color-300: var(--solution-3-300);
+  --default-color-350: var(--solution-3-350);
+  --default-color-400: var(--solution-3-400);
+}
+
+.solution-4 {
+  --default-color-100: var(--solution-4-100);
+  --default-color-150: var(--solution-4-150);
+  --default-color-200: var(--solution-4-200);
+  --default-color-250: var(--solution-4-250);
+  --default-color-300: var(--solution-4-300);
+  --default-color-350: var(--solution-4-350);
+  --default-color-400: var(--solution-4-400);
+}
+
+@media screen and (max-width: 45rem) {
+  h1 {
+    font-size: 1.7rem;
+  }
+}
